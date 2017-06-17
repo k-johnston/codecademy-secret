@@ -1,0 +1,122 @@
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  background-color: white;
+  color: white;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  padding-right: 100px;
+}
+
+header h2 {
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+}
+
+.bikepic {
+  background-image: url(../images/moto.jpeg);
+  width: 100%;
+  height: auto;
+}
+
+.newarrivals {
+  background: black;
+  margin: 30px 0px 30px 90px;
+  height: auto;
+  width: auto;
+}
+
+.newarrivals h2 {
+  text-transform: uppercase;
+}
+
+.newarrivals h1 {
+  text-transform: uppercase;
+}
+
+nav {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 10%;
+  width: 100%;
+  background-color: red;
+}
+
+p nav {
+  display: inline;
+}
+
+.forsale {
+  display: inline-flex;
+}
+
+.salecard {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pen, .watch, .glasses {
+  border: medium solid black;
+  height: auto;
+  width: 300px;
+}
+
+.pen, .watch, .glasses img {
+  width: 100%;
+  height: auto;
+}
+
+.pen, .watch, .glasses p {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 0px;
+}
+
+.info {
+  display: inline-flex;
+  align-items: left;
+  justify-content: space-between;
+}
+
+.location, .hours {
+  /* width of black bar equal to 1 card, width of .info equal to 3 cards + spacing, make spacing equal to cards padding-right to fill the half div, also fix padding in black bars*/
+}
+
+.location, .hours h3 {
+  background-color: black;
+  padding: 10px;
+}
+
+.location, .hours p {
+  color: black;
+  padding-top: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+
+footer p {
+  padding: 30px 0px 30px 90px;
+}
