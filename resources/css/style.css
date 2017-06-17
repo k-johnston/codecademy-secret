@@ -4,59 +4,86 @@ body {
   margin: 0;
   background-color: white;
   color: white;
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
 }
 
 header {
   background-color: black;
+  width: 100%;
+  height: 2.32rem;
+}
+
+.header {
+  padding-left: 8.5rem;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-.logo img {
-  padding-right: 100px;
+img.logo {
+  height: 1.5rem;
+  padding-top: 0.42rem;
 }
 
 header h2 {
   text-transform: uppercase;
-  padding-left: 10px;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
 }
 
 .content {
   width: 100%;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   flex-direction: column;
 }
 
 .bikepic {
   background-image: url(../images/moto.jpeg);
   width: 100%;
-  height: auto;
+  height: 25rem;
 }
 
 .newarrivals {
   background: black;
-  margin: 30px 0px 30px 90px;
-  height: auto;
-  width: auto;
+  margin-left: 8rem;
+  margin-top: 9rem;
+  height: 11rem;
+  width: 20rem;
 }
 
 .newarrivals h2 {
   text-transform: uppercase;
+  font-size: 1rem;
+  font-size: bold;
+  padding-top: 2rem;
+  margin-left: 3rem;
+  text-align: left;
 }
 
 .newarrivals h1 {
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 3rem;
+  padding-top: 0.25rem;
+  text-align: left;
 }
 
 nav {
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
-  padding: 5px 10%;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   width: 100%;
-  background-color: red;
+  background-color: firebrick;
 }
 
 p nav {
@@ -71,52 +98,84 @@ p nav {
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 3rem;
+  padding-right: 8rem;
+  padding-left: 8rem;
+  width: 100%;
 }
 
 .pen, .watch, .glasses {
-  border: medium solid black;
-  height: auto;
-  width: 300px;
+  border: 4px solid black;
+  height: 15rem;
+  width: 30%;
+  background-color: white;
 }
 
-.pen, .watch, .glasses img {
-  width: 100%;
-  height: auto;
+.salecard img {
+  width: 9rem;
+  height: 9rem;
+  padding: 2rem;
 }
 
-.pen, .watch, .glasses p {
+.salecard h2 {
   background-color: black;
   width: 100%;
-  text-align: center;
-  padding: 0px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
 .info {
   display: inline-flex;
-  align-items: left;
+  align-items: center;
   justify-content: space-between;
+  margin: 3rem 8rem 4rem 8rem;
 }
 
-.location, .hours {
-  /* width of black bar equal to 1 card, width of .info equal to 3 cards + spacing, make spacing equal to cards padding-right to fill the half div, also fix padding in black bars*/
+.location {
+  width: 35%;
+  text-align: left;
 }
 
-.location, .hours h3 {
+.hours {
+  width: 35%;
+  text-align: left;
+}
+
+.location h2 {
   background-color: black;
-  padding: 10px;
+  padding: 1rem 0rem 1rem 2rem;
 }
 
-.location, .hours p {
+.hours h2 {
+  background-color: black;
+  padding: 1rem 0rem 1rem 2rem;
+}
+
+.location p {
   color: black;
-  padding-top: 10px;
+  padding-left: 0rem;
+  text-align: left;
+  padding-top: 5px;
+}
+
+.hours p {
+  color: black;
+  padding-left: 0rem;
+  text-align: left;
+  padding-top: 5px;
 }
 
 footer {
+  display: flex;
+  align-items: center;
+  align-content: center;
   width: 100%;
-  height: 100px;
+  height: 5rem;
   background-color: black;
 }
 
-footer p {
-  padding: 30px 0px 30px 90px;
+p.footer {
+  padding-left: 8rem;
+  text-align: left;
 }
