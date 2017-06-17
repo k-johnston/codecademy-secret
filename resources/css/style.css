@@ -1,3 +1,5 @@
+/*body*/
+
 body {
   width: 100%;
   height: auto;
@@ -8,6 +10,8 @@ body {
   font-family: Helvetica, sans-serif;
   text-align: center;
 }
+
+/*header*/
 
 header {
   background-color: black;
@@ -37,12 +41,16 @@ header h2 {
   padding-bottom: 0.66rem;
 }
 
+/*content*/
+
 .content {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
+
+/*new arrivals*/
 
 .bikepic {
   background-image: url(../images/moto.jpeg);
@@ -76,6 +84,8 @@ header h2 {
   text-align: left;
 }
 
+/*nav*/
+
 nav {
   display: inline-flex;
   justify-content: space-around;
@@ -89,6 +99,12 @@ nav {
 p nav {
   display: inline;
 }
+
+p.responsive {
+  display: none;
+}
+
+/*salecards*/
 
 .forsale {
   display: inline-flex;
@@ -124,6 +140,8 @@ p nav {
   padding-bottom: 0.5rem;
   font-size: 1rem;
 }
+
+/*info*/
 
 .info {
   display: inline-flex;
@@ -166,6 +184,8 @@ p nav {
   padding-top: 5px;
 }
 
+/*footer*/
+
 footer {
   display: flex;
   align-items: center;
@@ -178,4 +198,88 @@ footer {
 p.footer {
   padding-left: 8rem;
   text-align: left;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1024px) {
+  .header, .salecard, p.footer {
+      padding-left: 0em;
+  }
+
+  .newarrivals, .info {
+    margin-left: 0rem;
+  }
+
+  .salecard {
+    padding-right: 0em;
+  }
+
+  .info {
+    margin-right: 0rem;
+  }
+
+  p.desktop {
+    display: none;
+  }
+
+  p.responsive {
+    display: inline;
+  }
+
+  .pen, .watch {
+    width: 47%;
+  }
+
+  .glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .bikepic {
+    height: 15rem;
+  }
+
+  .newarrivals {
+    margin-top: 10rem;
+    max-height: 5rem;
+    width: 100%;
+  }
+
+  .newarrivals h2 {
+    font-size: 0.77rem;
+    padding-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .newarrivals h1 {
+    font-size: 1rem;
+    margin-left: 2rem;
+  }
+
+  .pen {
+    width: 90%;
+  }
+
+  .watch, .glasses {
+    display: none;
+  }
+
+  .info {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .salecard, footer {
+    justify-content: center;
+  }
+
+  .location, .hours {
+    width: 90%;
+    margin-bottom: 0.5rem;
+  }
 }
